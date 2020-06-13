@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /oficina-conectada
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/oficina
+    username: postgres
+    password: 123456
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      dialect: org.hibernate.dialect.PostgreSQL94Dialect
+    properties:
+      hibernate:
+        temp.use_jdbc_metadata_defaults: false  
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+    

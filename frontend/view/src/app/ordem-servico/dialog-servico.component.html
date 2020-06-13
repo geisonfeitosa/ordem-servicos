@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Novo Serviço</h1>
+<div mat-dialog-content>
+    <div fxLayout="row wrap">
+        <div fxFlex.gt-sm="50" fxFlex.gt-xs="50" fxFlex="100">
+            <mat-form-field>
+                <input matInput class="inpcad" placeholder="Nome*" name="nome"
+                    [(ngModel)]="servico.nome">
+            </mat-form-field>
+        </div>
+    </div>
+    <div fxLayout="row wrap">
+        <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100" class="center">
+            <span class="f-s-10">Campos com * são obrigatórios</span>
+        </div>
+        <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100" class="div-btn-salvar">
+            <button mat-flat-button class="btn-salvar" (click)="salvar()"
+                [disabled]="!servico.nome">Salvar</button>&nbsp;&nbsp;&nbsp;
+            <button mat-flat-button class="btn-cancelar" (click)="cancelar()">Cancelar</button>
+        </div>
+    </div>
+</div>

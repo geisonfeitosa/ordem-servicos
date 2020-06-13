@@ -1,0 +1,89 @@
+  .example-card {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th.alinhar-center-u {
+    padding-left: 18px !important;
+    text-align: center !important;
+    width: 100px;
+  }
+
+  td.alinhar-center {
+    padding-left: 18px !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  mat-card-content {
+    margin-top: 30px;;
+  }
+
+  .f-s-10 {
+    font-size: 10px;
+  }
+
+  .center {
+    display: flex;
+    align-items: center !important;
+    flex-direction: table !important;
+    justify-content: center !important;
+  }
+
+  .div-btn-salvar {
+    margin: 20px 0 0px 0;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding: 3px 0 3px 0;
+ }
+
+ .btn-salvar {
+  height: 100%;
+  align-self: center;
+  width: 140px;
+  color: #ffffff;
+  background-color: #672f90;
+  border: 2px solid #672f90;
+}
+
+.btn-salvar:disabled {
+  background-color: #682f902f;
+  border: 2px solid #682f902f;
+}
+
+.btn-cancelar {
+  height: 100%;
+  align-self: center;
+  width: 140px;
+  color: #672f90;
+  background-color: #ffffff;
+  border: 2px solid #672f90;
+}
+
+::ng-deep .swal-button--confirm {
+  background: #672f90 !important;
+}
+
+::ng-deep .swal2-styled.swal2-confirm {
+  background-color: #672f90 !important;
+  border: 2px solid #672f90 !important;
+}
+
+::ng-deep .swal2-styled.swal2-cancel {
+  background-color: #ffffff !important;
+  border: 2px solid #672f90 !important;
+  color: #672f90 !important;
+}
+
+::ng-deep .swal2-popup .swal2-styled:focus {
+  box-shadow: none !important;
+}
